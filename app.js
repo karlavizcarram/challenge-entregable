@@ -17,3 +17,20 @@ function agregarAmigo() {
         alert("Por favor ingresa un nombre")
     }
 }
+
+// Actualizar lista en HTML
+function actualizarLista() {
+    // Limpia lista actual
+    let lista = document.getElementById("lista-amigos")
+    lista.innerHTML = ""
+
+    // Itera el array para llenar lia lista li
+    for (let i = 0; i < listaAmigos.length; i++) {
+        let li = document.createElement("li")
+        li.textContent = listaAmigos[i]
+        lista.appendChild(li)
+    }
+
+    // Muestra lista actualizada
+    lista.innerHTML;
+}
