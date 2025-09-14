@@ -49,3 +49,13 @@ function sortearAmigo() {
     document.getElementById("resultado").innerText = "El amigo sorteado es: " + amigoSeleccionado
     document.getElementById("resultado").innerHTML;
 }
+
+function reiniciarLista() {
+    // Limpia la lista de amigos
+    listaAmigos = []
+    // Limpia la lista en el HTML
+    document.getElementById("lista-amigos").innerHTML = ""
+    // Limpia el resultado del sorteo
+    document.getElementById("resultado").innerText = ""
+    alert("La lista ha sido reiniciada");
+}   
