@@ -34,3 +34,18 @@ function actualizarLista() {
     // Muestra lista actualizada
     lista.innerHTML;
 }
+
+function sortearAmigo() {
+    // Verifica que la lista tenga al menos 3 amigos
+    if (listaAmigos.length < 3) {
+        alert("Por favor ingresa al menos 3 nombres")
+        return
+    }
+    // Genera un número aleatorio entre 0 y la longitud de la lista de amigos
+    let indiceAleatorio = Math.floor(Math.random() * listaAmigos.length)
+    // Selecciona el amigo correspondiente al índice aleatorio
+    let amigoSeleccionado = listaAmigos[indiceAleatorio]
+    // Muestra el nombre del amigo seleccionado en el elemento con id "resultado"
+    document.getElementById("resultado").innerText = "El amigo sorteado es: " + amigoSeleccionado
+    document.getElementById("resultado").innerHTML;
+}
