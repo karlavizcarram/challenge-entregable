@@ -42,8 +42,13 @@ body {
     flex: 40%;
     display: flex;
     justify-content: center;
-    align-items: center;
-    padding: 40px 0 0;
+    align-items: center; 
+}
+
+.imagen-banner {
+    width: 300px;
+    height: auto;
+    margin-left: 20px;
 }
 
 /* Sección de entrada */
@@ -59,12 +64,12 @@ body {
 
 /* Títulos */
 .main-title {
-    font-size: 48px;
-    font-family: "Merriweather", serif;
+    font-size: 2.25rem;
     font-weight: 900;
     color: var(--color-blue);
     font-family: var(--fuente-krona);
 }
+
 
 .section-title {
     font-size: 36px;
@@ -90,11 +95,15 @@ body {
     border: 2px solid #000;
     border-radius: 25px 0 0 25px;
     font-size: 16px;
+    font-family: var(--fuente-montserrat);
 }
 
 .button-container {
-    width: 300px;
-    justify-content: center;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    width: 20%;
 }
 
 /* Estilos de entrada de texto */
@@ -105,14 +114,14 @@ body {
     border: 2px solid #333;
     border-right: none;
     border-radius: 25px 0 0 25px;
-    font-family: "Merriweather", serif;
+    font-family: var(--fuente-montserrat);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 /* Estilos de botón */
 button {
     padding: 15px 30px;
-    font-family: "Inter", sans-serif;
+    font-family: var(--fuente-krona);
     font-size: 16px;
     border: 2px solid #000;
     border-radius: 25px;
@@ -122,26 +131,27 @@ button {
 
 .button-add {
     background-color: var(--color-tertiary);
-    color: var(--color-text);
+    color: var(--color-secondary);
     border-radius: 0 25px 25px 0;
 }
 
 .button-add:hover {
-    background-color: #a1a1a1;
+    background-color: #DDF4E7;
+    color:#000;
 }
 
 /* Listas */
 ul {
     list-style-type: none;
     color: var(--color-text);
-    font-family: "Inter", sans-serif;
+    font-family: var(--fuente-montserrat);
     font-size: 18px;
     margin: 20px 0;
 }
 
 .result-list {
     margin-top: 15px;
-    color: #0522df;
+    color: var(--color-blue);
     font-size: 22px;
     font-weight: bold;
     text-align: center;
@@ -153,15 +163,62 @@ ul {
     align-items: center;
     width: 100%;
     padding: 10px 40px;
-    color: var(--color-blue);
+    color: var(--color-secondary);
     background-color: var(--color-button);
     font-size: 16px;
+    
 }
 
 .button-draw img {
     margin-right: 40px;
+    color: var(--color-secondary);
 }
 
 .button-draw:hover {
     background-color: var(--color-button-hover);
+}
+
+
+@media (max-width: 1200px){
+    .header{
+        padding: 10%;
+    }
+
+    .header-banner {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+    }
+
+    .imagen-banner{
+        width: 250px;
+        height: auto;
+        margin: 0;
+    }
+
+    .section-title{
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+    }
+
+    .main-content{
+        width: auto;
+        flex-direction: column;
+        padding: 5px;
+    }
+
+    .input-section{
+        width: auto;
+    }
+
+    .input-wrapper{
+        width: auto; 
+    }
+
+    .button-container{
+        width: auto;
+    }
 }
