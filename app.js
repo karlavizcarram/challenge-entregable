@@ -46,7 +46,7 @@ function sortearAmigo() {
     // Selecciona el amigo correspondiente al índice aleatorio
     let amigoSeleccionado = listaAmigos[indiceAleatorio]
     // Muestra el nombre del amigo seleccionado en el elemento con id "resultado"
-    document.getElementById("resultado").innerText = "El amigo sorteado es: " + amigoSeleccionado
+    document.getElementById("resultado").innerText = "El amigo seleccionado es: " + amigoSeleccionado
     document.getElementById("resultado").innerHTML;
 }
 
@@ -57,5 +57,5 @@ function reiniciarLista() {
     document.getElementById("lista-amigos").innerHTML = ""
     // Limpia el resultado del sorteo
     document.getElementById("resultado").innerText = ""
-    alert("La lista ha sido reiniciada");
+    alert("Se ha borrado la lista");
 }   

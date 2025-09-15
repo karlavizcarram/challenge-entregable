@@ -13,12 +13,12 @@
 <body>
     <main class="main-content">
         <header class="header-banner">
-            <h1 class="main-title">Conoce a tu amigo secreto</h1>
-            <img src="assets/amigo-secreto.png" alt="Imagen representativa de amigo secreto">
+            <h1 class="main-title">Conoce a tu <br> amigo secreto</h1>
+            <img class="imagen-inicial" src="assets/deco-create.svg" alt="Imagen representativa de amigo secreto">
         </header>
         
         <section class="input-section">
-            <h2 class="section-title">Digite el nombre  de sus amigos</h2>
+            <h2 class="section-title">Ingresa el nombre de tus amigos a sortear 🎉</h2>
             <!-- Llamamos 2 funciones para agregar el amigo a la lista y actualizar la lista visualmente -->
             <div class="input-wrapper">
                 <input type="text" id="amigo" class="input-amigo" placeholder="Escribe un nombre">
@@ -29,16 +29,19 @@
             <ul id="resultado" class="result-list" aria-live="polite"></ul>
 
             <div class="button-container">
+            <!-- Llamamos función para realizar el sorteo -->
                 <button class="button-draw" onclick="sortearAmigo()" aria-label="Sortear amigo secreto">
                     <img src="assets/play_circle_outline.png" alt="Ícono para sortear">
                     Sortear amigo
                 </button>
+            <!-- Llamamos función para limpiar lista -->
+                <button class="button-draw" onclick="reiniciarLista()" aria-label="Limpiar lista">
+                    <img src="assets/play_circle_outline.png" alt="Ícono para reiniciar">
+                    Limpiar lista
+                </button>
             </div>
             <div class="button-container">
-                <button class="button-draw" onclick="reiniciarLista()" aria-label="Reiniciar lista">
-                    <img src="assets/play_circle_outline.png" alt="Ícono para reiniciar">
-                    Reiniciar lista
-                </button>
+
             </div>
         </section>
     </main>
